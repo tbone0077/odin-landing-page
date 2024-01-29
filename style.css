@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 a {
@@ -48,8 +49,9 @@ ul {
 
 .header-bottom-right img {
     height: 200px;
-    width: 300px;
-    object-fit: contain;
+    width: 400px;
+    object-fit: cover;
+    padding-left: 20px;
 }
 
 .secondary, .header-top-right a {
@@ -75,4 +77,49 @@ ul {
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
+}
+
+.header-bottom-left button {
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.header-top {
+    padding-bottom: 50px;
+}
+
+.header, .body, .footer {
+    padding: 0 50px;
+}
+
+.header-bottom {
+    padding-bottom: 50px;
+}
+
+.footer {
+    font-size: 8px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.body-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.body-top-bottom {
+    display: flex;
+}
+
+.body-top-bottom img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
 }
