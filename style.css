@@ -59,7 +59,7 @@ ul {
     color: #E5E7EB;
 }
 
-.body-bottom-left, button {
+.body-bottom, button {
     background-color: #3882F6;
 }
 
@@ -67,10 +67,14 @@ ul {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    padding-bottom: 20px;
 }
 
 .body-middle {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
 .quote {
@@ -91,8 +95,9 @@ ul {
     padding-bottom: 50px;
 }
 
-.header, .body, .footer {
-    padding: 0 50px;
+.header, .body-top, .body-middle, .body-bottom, .footer {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header-bottom {
@@ -116,10 +121,44 @@ ul {
 
 .body-top-bottom {
     display: flex;
+    gap: 20px;
 }
 
 .body-top-bottom img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
+    border: 2px solid blue;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.caption {
+    width: 150px;
+}
+
+.author {
+    font-weight: 700;
+    text-align: right;
+    padding-right: 80px;
+}
+
+.body-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 100px;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+button.body-bottom-right {
+    color: white;
+    border: 1px solid white;
+    padding: 1px 20px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border-radius: 6px;
 }
